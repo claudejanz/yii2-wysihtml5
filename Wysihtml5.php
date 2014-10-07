@@ -2,6 +2,7 @@
 
 namespace claudejanz\wysihtml5;
 
+use dosamigos\editable\EditableWysiHtml5Asset;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
@@ -28,7 +29,7 @@ class Wysihtml5 extends InputWidget {
 
     public function registerClientScript() {
         $view = $this->getView();
-        Wysihtml5Asset::register($view);
+        EditableWysiHtml5Asset::register($view);
         
         $id = $this->options['id'];
         $selector = ";jQuery('#$id')";
