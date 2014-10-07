@@ -11,8 +11,10 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*"
+        "yiisoft/yii2": "*",
+        "2amigos/yii2-editable-widget" : "*"
     },
+    
     "autoload": {
         "psr-4": {
             "claudejanz\\wysihtml5\\": ""
